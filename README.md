@@ -12,3 +12,9 @@ Showing the server members status within 'canvas using 'canvas-constructor' and 
 * canvas-constructor
 * canvas
 ```
+
+# Glitch.com projext example: 
+
+```
+https://glitch.com/~baron-guild-members-status
+```

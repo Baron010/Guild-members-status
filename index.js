@@ -69,7 +69,6 @@ client.on('message', async message => {
         var mathBackGround = await backGroundArray[Math.floor(Math.random() * backGroundArray.length)]
         var {body: guildIcon} = await get(message.guild.iconURL({ format: 'png', dynamic: true, size: 128 }))
         var {body: backGround} = await get(mathBackGround)
-        //var {body: label} = await get("https://media.discordapp.net/attachments/645077429936848897/688062900484571224/label.png")
         
       const buffer = await new Canvas(540, 250)
                 .setGlobalAlpha(0.5)

@@ -112,7 +112,7 @@ client.on('message', async message => {
                 .setColor('#ff9933')
                 .addBeveledRect(225,176,differenceIdle, 30)
                 .setColor('#FFFFFF')
-                .addBeveledRect(40, 40, 170, 170, 16)
+                .addBeveledRect(40, 40, 170, 170, 20)
                 .fill().restore()
                 .addBeveledImage(guildIcon, 40, 40, 170, 170, 16)
                 .save()

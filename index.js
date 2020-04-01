@@ -1,12 +1,11 @@
 /*
-This code was published for the first time in Toxic Codes server;
 All copyrights reserved to 'Baron' , 'Idiots Group';
 you can contact with me here : https://baron.netlify.com/
 
 requirements: 
 
  * npm i discord.js 
-	  version (12.0.2)
+	  version (12+)
  * npm i canvas
  * npm i node-superfetch
  * npm i canvas-constructor

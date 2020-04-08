@@ -13,8 +13,8 @@ Showing the server members status within 'canvas using 'canvas-constructor' and 
 * canvas
 ```
 
-# Glitch.com project example: 
+# Import Glitch.com project: 
 
 ```
-https://glitch.com/~baron-guild-members-status
+https://glitch.com/edit/#!/import/git?url=https://github.com/Baron010/Guild-members-status
 ```

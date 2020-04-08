@@ -13,7 +13,7 @@ Showing the server members status within 'canvas using 'canvas-constructor' and 
 * canvas
 ```
 
-# Import Glitch.com project: 
+# Clon glitch.com project from this repo click here: 
 
 ```
 https://glitch.com/edit/#!/import/git?url=https://github.com/Baron010/Guild-members-status

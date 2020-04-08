@@ -6,7 +6,7 @@ Showing the server members status within 'canvas using 'canvas-constructor' and 
 
 # Requirements
 
-```
+```js
 * discord.js version (12+)
 * node-superfetch
 * canvas-constructor

@@ -32,8 +32,7 @@ client.on('message', async message => {
     let command = args.shift().toLocaleLowerCase();
 
     switch (command) {
-    case "members" :
-
+       case "members": {            
       let curOnline = message.guild.members.cache.filter(m=> m.presence.status == 'online').size;
       let curOffline = message.guild.members.cache.filter(m=> m.presence.status == 'offline').size;
       let curDnd = message.guild.members.cache.filter(m=> m.presence.status == 'dnd').size;
@@ -66,7 +65,15 @@ client.on('message', async message => {
                                         'https://cdn.probot.io/profile/bg-8.png','https://cdn.probot.io/profile/breakingbad.jpg','https://cdn.probot.io/profile/03404.png','https://cdn.probot.io/profile/123123123.png','https://cdn.probot.io/profile/sdffdssdf.png',
                                         'https://cdn.probot.io/profile/walking_dead2.png','https://cdn.probot.io/profile/got2.png','https://cdn.probot.io/profile/ragnar.jpg')
         var mathBackGround = await backGroundArray[Math.floor(Math.random() * backGroundArray.length)]
-        var {body: guildIcon} = await get(message.guild.iconURL({ format: 'png', dynamic: true, size: 128 }))
+        if(message.guild.iconURL() == null) {
+          
+          var {body: guildIcon} = await get("https://www.net-aware.org.uk/siteassets/images-and-icons/application-icons/app-icons-discord.png?w=585&scale=down")
+          
+        } else if(message.guild.iconURL() !== null){
+          
+          var {body: guildIcon} = await get(message.guild.iconURL({ format: 'png', dynamic: false, size: 128}))
+          
+        }
         var {body: backGround} = await get(mathBackGround)
         
       const buffer = await new Canvas(540, 250)
@@ -110,7 +117,7 @@ client.on('message', async message => {
                 .setColor('#ff9933')
                 .addBeveledRect(225,176,differenceIdle, 30)
                 .setColor('#FFFFFF')
-                .addBeveledRect(40, 40, 170, 170, 20)
+                .addBeveledRect(40, 40, 170, 170, 40)
                 .fill().restore()
                 .addBeveledImage(guildIcon, 40, 40, 170, 170, 16)
                 .save()
@@ -125,7 +132,8 @@ client.on('message', async message => {
  } catch (error) {
     return message.channel.send(`An error ocurred: **${error.message}**`);
   }
-      break;
-    }
+            
+          break;
+        }
 })
 client.login('BOT_TOKEN_HERE')

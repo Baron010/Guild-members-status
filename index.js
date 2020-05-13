@@ -135,5 +135,6 @@ client.on('message', async message => {
             
           break;
         }
+    }
 })
 client.login('BOT_TOKEN_HERE')

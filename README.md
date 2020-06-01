@@ -1,6 +1,6 @@
 # Guild-members-status
 
-<img width="540" height="250" align="center" style="float: left; margin: 0 10px 0 0;" alt="Baron-Bot" src="https://prnt.sc/srqpv8">
+<img width="540" height="250" align="center" style="float: left; margin: 0 10px 0 0;" alt="Baron-Bot" src="https://pasteboard.co/Jb59aCy.png">
 
 Showing the server members status within 'canvas using 'canvas-constructor' and 'progress bar'.
 
